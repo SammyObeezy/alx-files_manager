@@ -1,0 +1,63 @@
+2024-10-02T14:03:14.407-0700 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2024-10-02T14:03:14.482-0700 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] MongoDB starting : pid=1004 port=27017 dbpath=/data/db 64-bit host=1f003ad89d12
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] db version v4.2.19
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] git version: e68a7d47305e14e090cba9ce3d92533053299996
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] allocator: tcmalloc
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] modules: none
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] build environment:
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten]     distarch: x86_64
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten]     target_arch: x86_64
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] 256 MB of memory available to the process out of 15714 MB total system memory
+2024-10-02T14:03:14.482-0700 I  CONTROL  [initandlisten] options: { storage: { dbPath: "/data/db" } }
+2024-10-02T14:03:14.482-0700 I  STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2024-10-02T14:03:14.483-0700 I  STORAGE  [initandlisten] 
+2024-10-02T14:03:14.483-0700 I  STORAGE  [initandlisten] ** WARNING: The configured WiredTiger cache size is more than 80% of available RAM.
+2024-10-02T14:03:14.483-0700 I  STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/faq-memory-diagnostics-wt
+2024-10-02T14:03:14.483-0700 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=256M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2024-10-02T14:03:20.193-0700 I  STORAGE  [initandlisten] WiredTiger message [1727903000:193721][1004:0x7f20059a6b00], txn-recover: Recovering log 1 through 2
+2024-10-02T14:03:21.484-0700 I  STORAGE  [initandlisten] WiredTiger message [1727903001:484419][1004:0x7f20059a6b00], txn-recover: Recovering log 2 through 2
+2024-10-02T14:03:23.289-0700 I  STORAGE  [initandlisten] WiredTiger message [1727903003:289454][1004:0x7f20059a6b00], txn-recover: Main recovery loop: starting at 1/24576 to 2/256
+2024-10-02T14:03:25.886-0700 I  STORAGE  [initandlisten] WiredTiger message [1727903005:882268][1004:0x7f20059a6b00], txn-recover: Recovering log 1 through 2
+2024-10-02T14:03:27.279-0700 I  STORAGE  [initandlisten] WiredTiger message [1727903007:279640][1004:0x7f20059a6b00], txn-recover: Recovering log 2 through 2
+2024-10-02T14:03:27.886-0700 I  STORAGE  [initandlisten] WiredTiger message [1727903007:885949][1004:0x7f20059a6b00], txn-recover: Set global recovery timestamp: (0, 0)
+2024-10-02T14:03:27.991-0700 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2024-10-02T14:03:28.080-0700 I  STORAGE  [initandlisten] No table logging settings modifications are required for existing WiredTiger tables. Logging enabled? 1
+2024-10-02T14:03:28.097-0700 I  STORAGE  [initandlisten] Timestamp monitor starting
+2024-10-02T14:03:28.103-0700 I  CONTROL  [initandlisten] 
+2024-10-02T14:03:28.104-0700 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2024-10-02T14:03:28.104-0700 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] 
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2024-10-02T14:03:28.105-0700 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2024-10-02T14:03:28.106-0700 I  CONTROL  [initandlisten] 
+2024-10-02T14:03:28.182-0700 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2024-10-02T14:03:28.209-0700 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2024-10-02T14:03:28.217-0700 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2024-10-02T14:03:28.217-0700 I  NETWORK  [listener] Listening on 127.0.0.1
+2024-10-02T14:03:28.217-0700 I  NETWORK  [listener] waiting for connections on port 27017
+2024-10-02T14:05:08.688-0700 I  NETWORK  [listener] connection accepted from 127.0.0.1:44022 #1 (1 connection now open)
+2024-10-02T14:05:08.688-0700 I  NETWORK  [conn1] received client metadata from 127.0.0.1:44022 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.19" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2024-10-02T14:06:59.683-0700 I  NETWORK  [conn1] end connection 127.0.0.1:44022 (0 connections now open)
+2024-10-02T14:07:45.186-0700 I  NETWORK  [listener] connection accepted from 127.0.0.1:41688 #2 (1 connection now open)
+2024-10-02T14:07:45.379-0700 I  NETWORK  [conn2] received client metadata from 127.0.0.1:41688 conn2: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-1103-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2024-10-02T14:07:45.484-0700 I  NETWORK  [listener] connection accepted from 127.0.0.1:41702 #3 (2 connections now open)
+2024-10-02T14:07:45.484-0700 I  NETWORK  [listener] connection accepted from 127.0.0.1:41718 #4 (3 connections now open)
+2024-10-02T14:07:45.583-0700 I  NETWORK  [conn4] received client metadata from 127.0.0.1:41718 conn4: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-1103-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2024-10-02T14:07:45.583-0700 I  NETWORK  [conn3] received client metadata from 127.0.0.1:41702 conn3: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.4.0-1103-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2024-10-02T14:07:45.683-0700 I  STORAGE  [conn4] createCollection: files_manager.users with generated UUID: 1011da00-cec4-44bc-8085-965ef554c83e and options: {}
+2024-10-02T14:07:45.785-0700 I  INDEX    [conn4] index build: done building index _id_ on ns files_manager.users
+2024-10-02T14:07:45.786-0700 I  STORAGE  [conn3] createCollection: files_manager.files with generated UUID: 5a9246e3-8417-4551-92db-75cf45ef4553 and options: {}
+2024-10-02T14:07:45.787-0700 I  COMMAND  [conn4] command files_manager.users command: create { create: "users", lsid: { id: UUID("5c1d1dd8-b07e-448a-8392-585214d4f6a9") }, $db: "files_manager" } numYields:0 reslen:38 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { w: 2 } }, Database: { acquireCount: { w: 1, W: 1 } }, Collection: { acquireCount: { r: 2, W: 1 } }, Mutex: { acquireCount: { r: 1 } } } flowControl:{ acquireCount: 2, timeAcquiringMicros: 1 } storage:{} protocol:op_msg 104ms
+2024-10-02T14:07:45.984-0700 I  INDEX    [conn3] index build: done building index _id_ on ns files_manager.files
+2024-10-02T14:07:45.984-0700 I  COMMAND  [conn3] command files_manager.files command: create { create: "files", lsid: { id: UUID("f1afd684-d3dc-4328-9013-5ee77e42cc25") }, $db: "files_manager" } numYields:0 reslen:38 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { w: 2 } }, Database: { acquireCount: { w: 1, W: 1 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 103358 } }, Collection: { acquireCount: { r: 1, W: 1 } }, Mutex: { acquireCount: { r: 2 } } } flowControl:{ acquireCount: 2 } storage:{} protocol:op_msg 301ms
+2024-10-02T14:09:38.079-0700 I  NETWORK  [conn4] end connection 127.0.0.1:41718 (2 connections now open)
+2024-10-02T14:09:38.079-0700 I  NETWORK  [conn3] end connection 127.0.0.1:41702 (1 connection now open)
+2024-10-02T14:09:38.080-0700 I  NETWORK  [conn2] end connection 127.0.0.1:41688 (0 connections now open)
